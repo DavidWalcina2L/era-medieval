@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background: #8d4925;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Estilos do carrossel */
+#carouselSection {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carousel {
+    width: 75%; /* Define uma largura para o carrossel */
+    height: 400px; /* Define uma altura fixa */
+    overflow: hidden; /* Oculta o conteúdo que sai do contêiner */
+    position: relative;
+    background: transparent; /* Remove o fundo do carrossel */
+    border: none; /* Remove qualquer borda, se houver */
+}
+
+.carousel-inner {
+    display: flex;
+    width: 800%; /* 8 imagens, então 8 vezes a largura do contêiner */
+    height: 100%;
+    animation: slide 60s infinite; /* Duração da animação */
+    
+}
+
+.carousel-item {
+    width: 12.5%; /* 100% dividido pelo número de imagens (8) */
+    flex: 1 0 auto;
+    
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que as imagens cubram o contêiner sem distorção */
+    display: block; /* Remove o espaço em branco abaixo das imagens */
+    
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    background-color: #8d4925;
+    color: #fff;
+}
