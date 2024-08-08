@@ -52,7 +52,7 @@ h2 {
     display: flex;
     width: 800%; /* 8 imagens, então 8 vezes a largura do contêiner */
     height: 100%;
-    animation: slide 60s infinite; /* Duração da animação */
+    animation: slide 10s infinite; /* Duração da animação */
     
 }
 
