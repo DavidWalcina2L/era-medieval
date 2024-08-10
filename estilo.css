@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: ;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -9,10 +9,11 @@ body {
 }
 
 header {
-    background: #8d4925;
-    color: #fff;
+    background: #5e2d0069;
+    color: #000000;
     padding: 1rem 0;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header h1 {
@@ -41,7 +42,7 @@ h2 {
 
 .carousel {
     width: 75%; /* Define uma largura para o carrossel */
-    height: 400px; /* Define uma altura fixa */
+    height: 600px; /* Define uma altura fixa */
     overflow: hidden; /* Oculta o conteúdo que sai do contêiner */
     position: relative;
     background: transparent; /* Remove o fundo do carrossel */
@@ -52,7 +53,7 @@ h2 {
     display: flex;
     width: 800%; /* 8 imagens, então 8 vezes a largura do contêiner */
     height: 100%;
-    animation: slide 10s infinite; /* Duração da animação */
+    animation: slide 60s infinite; /* Duração da animação */
     
 }
 
@@ -82,6 +83,9 @@ footer {
     padding: 5px;
     bottom: 0;
     width: 100%;
-    background-color: #8d4925;
-    color: #fff;
+    background: #5e2d0069;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
 }
+
